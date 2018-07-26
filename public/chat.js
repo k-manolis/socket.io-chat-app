@@ -40,8 +40,10 @@ message.addEventListener('keypress', function(e){
 // Listen for events
 socket.on('chat', function(data){
 	feedback.innerHTML = "" ;
-    output.innerHTML += '<p><strong>' + data.handle + ': </strong>' + data.message + '</p>';
-});	
+	output.innerHTML += '<p><strong>' + data.handle + ': </strong>' + data.message + '</p>';
+	// Auto-scroll the chat window panel
+	$("#chat-window").scrollTop($("#chat-window").prop("scrollHeight") - $("#chat-window").height());
+	});	
 
 
 socket.on('typing', function(data){
