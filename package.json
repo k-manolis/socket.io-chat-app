@@ -1,12 +1,12 @@
 {
   "name": "socket",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple real-time chat app demo built with node and socket.io",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "me",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
@@ -14,5 +14,13 @@
   },
   "devDependencies": {
     "nodemon": "^1.17.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k-manolis/socket.io-chat-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/k-manolis/socket.io-chat-app/issues"
+  },
+  "homepage": "https://github.com/k-manolis/socket.io-chat-app#readme"
 }
